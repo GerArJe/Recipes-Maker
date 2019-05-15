@@ -1,19 +1,30 @@
+
 fun main(args : Array<String>){
-    val opciones = """
+    println(":: Bienvenido a Recipe Maker ::")
+    do {
+        println("""
         Selecciona la opción deseada:
         1. Hacer una receta
         2. Ver mis recetas
         3. Salir
-    """.trimIndent()
-
-    println(":: Bienvenido a Recipe Maker ::")
-    do {
-        println(opciones)
+    """.trimIndent())
         val response : String? = readLine()
         when(response){
-            "1" -> println("Seleccionaste: 1. Hacer una receta")
-            "2" -> println("Seleccionaste: 2. Ver mis recetas") 
+            "1" -> makeRecipe()
+            "2" -> viewRecipe()
             "3" -> println("Seleccionaste: 3. Salir")
+            else -> println("Opción no valida intente de nuevo")
         }
     }while (response != "3")
+}
+
+fun makeRecipe(){
+    val listaIngregientes = arrayOf("Agua","Leche","Carne","Verduras","Frutas","Cereal","Huevos","Aceites")
+    for ((index, ingrediente) in listaIngregientes.withIndex()){
+        println("${index+1}. $ingrediente")
+    }
+}
+
+fun viewRecipe(){
+    println("Ver mis recetas")
 }
