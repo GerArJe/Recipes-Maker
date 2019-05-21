@@ -1,3 +1,4 @@
+import model.Categoria
 
 fun main(args : Array<String>){
     println(":: Bienvenido a Recipe Maker ::")
@@ -16,15 +17,17 @@ fun main(args : Array<String>){
             else -> println("Opción no valida intente de nuevo")
         }
     }while (response != "3")
+
+
 }
 
-fun makeRecipe(){
+fun makeRecipe(){//hacer una receta
     val listaIngregientes = arrayOf("Agua","Leche","Carne","Verduras","Frutas","Cereal","Huevos","Aceites")
     for ((index, ingrediente) in listaIngregientes.withIndex()){
         println("${index+1}. $ingrediente")
     }
 }
 
-fun viewRecipe(){
+fun viewRecipe(){//mostrar recetas
     println("Ver mis recetas")
 }
