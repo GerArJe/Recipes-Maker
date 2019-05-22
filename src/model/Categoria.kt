@@ -67,56 +67,56 @@ class Categoria(){
     fun mostrasListaAgua(){
         println("Lista Agua")
         for((index,ingrediente) in listaAgua.withIndex()){
-            println("${index + 1} : ${ingrediente.alimento}")
+            println("${index + 1}. ${ingrediente.alimento} Unidad de medida: ${ingrediente.unidadDeMedida}")
         }
     }
 
     fun mostrasListaLeche(){
         println("Lista Leche")
         for((index,ingrediente) in listaLeche.withIndex()){
-            println("${index + 1} : ${ingrediente.alimento}")
+            println("${index + 1}. ${ingrediente.alimento} Unidad de medida: ${ingrediente.unidadDeMedida}")
         }
     }
 
     fun mostrasListaCarne(){
         println("Lista Carne")
         for((index,ingrediente) in listaCarne.withIndex()){
-            println("${index + 1} : ${ingrediente.alimento}")
+            println("${index + 1}. ${ingrediente.alimento} Unidad de medida: ${ingrediente.unidadDeMedida}")
         }
     }
 
     fun mostrasListaVerduras(){
         println("Lista Verduras")
         for((index,ingrediente) in listaVerduras.withIndex()){
-            println("${index + 1} : ${ingrediente.alimento}")
+            println("${index + 1}. ${ingrediente.alimento} Unidad de medida: ${ingrediente.unidadDeMedida}")
         }
     }
 
     fun mostrasListaFrutas(){
         println("Lista Frutas")
         for((index,ingrediente) in listaFrutas.withIndex()){
-            println("${index + 1} : ${ingrediente.alimento}")
+            println("${index + 1}. ${ingrediente.alimento} Unidad de medida: ${ingrediente.unidadDeMedida}")
         }
     }
 
     fun mostrasListaCereal(){
         println("Lista Cereal")
         for((index,ingrediente) in listaCereal.withIndex()){
-            println("${index + 1} : ${ingrediente.alimento}")
+            println("${index + 1}. ${ingrediente.alimento} Unidad de medida: ${ingrediente.unidadDeMedida}")
         }
     }
 
     fun mostrasListaHuevos(){
         println("Lista Huevos")
         for((index,ingrediente) in listaHuevos.withIndex()){
-            println("${index + 1} : ${ingrediente.alimento}")
+            println("${index + 1}. ${ingrediente.alimento} Unidad de medida: ${ingrediente.unidadDeMedida}")
         }
     }
 
     fun mostrasListaAceites(){
         println("Lista Aceites")
         for((index,ingrediente) in listaAceites.withIndex()){
-            println("${index + 1} : ${ingrediente.alimento}")
+            println("${index + 1}. ${ingrediente.alimento} Unidad de medida: ${ingrediente.unidadDeMedida}")
         }
     }
 }
